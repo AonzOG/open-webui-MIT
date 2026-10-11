@@ -1,3 +1,100 @@
+# AonzOG Open WebUI — MIT-Licensed Historical Snapshot
+
+This repository contains an imported historical snapshot of **Open WebUI**, preserved from a specific upstream revision released under the MIT License.
+
+The purpose of this repository is to retain an independently maintained copy of the Open WebUI codebase as it existed at the selected revision, allowing subsequent development, modification, integration, and commercial use in accordance with the applicable licence terms.
+
+## 1. Original Repository and Source Revision
+
+| Information | Details |
+|---|---|
+| Original project | Open WebUI |
+| Original repository | https://github.com/open-webui/open-webui |
+| Upstream default branch | `main` |
+| Source reference type | Historical commit-pinned snapshot |
+| Source branch/snapshot link | https://github.com/open-webui/open-webui/tree/1dfb479d367e5f5902f051c823f9aef836e04791 |
+| Original commit ID / SHA-1 | `1dfb479d367e5f5902f051c823f9aef836e04791` |
+| Original commit date | 5 January 2025, 09:53:03 UTC |
+| **Number of upstream commits through this revision** | **8,076 (inclusive)** |
+| Git tree SHA-1 | `cc27e9888c6835dbb39183562861fb1b567e4141` |
+| Licence at selected revision | MIT License |
+
+**Commit count clarification:** The 8,076 commits represent the upstream Git history reachable from the selected commit, including that commit and its ancestors. This count was verified using the GitHub commits API for the exact revision. It does not represent the number of commits in the imported destination repository.
+
+The source URL refers to an immutable historical commit rather than a separately named Git branch. This ensures that the source revision remains identifiable even as the original project's `main` branch continues to evolve.
+
+## 2. Imported Repository Details
+
+| Information | Details |
+|---|---|
+| Repository name | `open-webui-MIT` |
+| Repository owner | `AonzOG` |
+| Repository URL | https://github.com/AonzOG/open-webui-MIT |
+| Destination branch | `main` |
+| Destination branch URL | https://github.com/AonzOG/open-webui-MIT/tree/main |
+| Initial completed import commit | `f6e1a19cd7e2e0fd7f365f08f7c205a7bceef3e2` |
+| Import date | 11 October 2026 |
+| Original licence preserved | MIT License |
+| Source tree integrity | Verified — exact Git tree SHA match |
+
+The source files were imported into a new Git repository with independent commit history. The destination contained four commits upon completion of the import process. The original upstream history of 8,076 commits was not reproduced in the destination repository.
+
+## 3. Source Integrity and Version Identification
+
+The imported source tree was verified against the original Open WebUI revision.
+
+**Original upstream commit SHA-1:**
+
+`1dfb479d367e5f5902f051c823f9aef836e04791`
+
+**Original upstream Git tree SHA-1:**
+
+`cc27e9888c6835dbb39183562861fb1b567e4141`
+
+**Imported repository Git tree SHA-1:**
+
+`cc27e9888c6835dbb39183562861fb1b567e4141`
+
+The identical Git tree hashes establish that the tracked file contents, paths, and Git file modes of the completed import matched the original upstream snapshot.
+
+This verification applies to the initial imported source revision. Subsequent modifications to the destination repository may produce different Git tree hashes.
+
+## 4. Licensing and Attribution
+
+The selected Open WebUI revision contains the MIT License.
+
+The original licence file and its copyright notice are preserved in this repository.
+
+**Original project:** Open WebUI
+
+**Original copyright notice:** Copyright (c) 2023 Timothy Jaeryang Baek
+
+**Original licence:** MIT License
+
+**Original licence file:**
+
+https://github.com/open-webui/open-webui/blob/1dfb479d367e5f5902f051c823f9aef836e04791/LICENSE
+
+The MIT License permits software use, modification, redistribution, sublicensing, and commercial distribution, subject to retention of the required copyright and permission notices. Any separately licensed third-party components remain subject to their applicable terms.
+
+## 5. Repository Maintenance and Development
+
+This repository establishes the specified historical MIT-licensed Open WebUI revision as its original imported codebase.
+
+Future development, bug fixes, security improvements, feature additions, and integrations may be undertaken independently by the repository owner.
+
+The repository is not automatically synchronized with the latest upstream Open WebUI releases. Future changes to the upstream project's codebase or licensing do not automatically alter the historical revision imported here.
+
+For an exact record of the original imported source, refer to:
+
+- **Original source snapshot:** https://github.com/open-webui/open-webui/tree/1dfb479d367e5f5902f051c823f9aef836e04791
+- **Original source commit:** https://github.com/open-webui/open-webui/commit/1dfb479d367e5f5902f051c823f9aef836e04791
+- **Completed destination import:** https://github.com/AonzOG/open-webui-MIT/commit/f6e1a19cd7e2e0fd7f365f08f7c205a7bceef3e2
+
+---
+
+**Original Open WebUI README follows below, retained without modification.**
+
 # Open WebUI 👋
 
 ![GitHub stars](https://img.shields.io/github/stars/open-webui/open-webui?style=social)
