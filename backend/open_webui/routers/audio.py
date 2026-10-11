@@ -548,7 +548,9 @@ def transcription(
 ):
     log.info(f"file.content_type: {file.content_type}")
 
-    if file.content_type not in ["audio/mpeg", "audio/wav", "audio/ogg", "audio/x-m4a"]:
+    supported_filetypes = {"audio/mpeg", "audio/wav", "audio/ogg", "audio/x-m4a"}
+    media_type = (file.content_type or "").split(";", 1)[0].strip().lower()
+    if media_type not in supported_filetypes:
         raise HTTPException(
             status_code=status.HTTP_400_BAD_REQUEST,
             detail=ERROR_MESSAGES.FILE_NOT_SUPPORTED,

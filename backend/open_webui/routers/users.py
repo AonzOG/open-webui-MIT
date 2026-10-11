@@ -245,6 +245,13 @@ async def update_user_by_id(
     form_data: UserUpdateForm,
     session_user=Depends(get_admin_user),
 ):
+    first_user = Users.get_first_user()
+    if first_user and user_id == first_user.id and session_user.id != user_id:
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN,
+            detail=ERROR_MESSAGES.ACTION_PROHIBITED,
+        )
+
     user = Users.get_user_by_id(user_id)
 
     if user:
@@ -292,6 +299,13 @@ async def update_user_by_id(
 
 @router.delete("/{user_id}", response_model=bool)
 async def delete_user_by_id(user_id: str, user=Depends(get_admin_user)):
+    first_user = Users.get_first_user()
+    if first_user and user_id == first_user.id:
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN,
+            detail=ERROR_MESSAGES.ACTION_PROHIBITED,
+        )
+
     if user.id != user_id:
         result = Auths.delete_auth_by_id(user_id)
 
