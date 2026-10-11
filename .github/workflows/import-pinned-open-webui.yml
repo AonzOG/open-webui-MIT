@@ -54,9 +54,13 @@ jobs:
             exit 1
           fi
 
+          # The GITHUB_TOKEN cannot create/update workflow files.
+          # Restore the bootstrap workflow for the first-stage push.
+          git restore --source=HEAD --staged --worktree .github/workflows
+
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "Import MIT Open WebUI snapshot ${SOURCE_COMMIT}" \
+          git commit -m "Import MIT Open WebUI snapshot without upstream workflows ${SOURCE_COMMIT}" \
             -m "Source: https://github.com/open-webui/open-webui/tree/${SOURCE_COMMIT}" \
             -m "Verified source tree: ${SOURCE_TREE}"
           git push origin HEAD:main
